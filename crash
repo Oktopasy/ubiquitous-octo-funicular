@@ -1,12 +1,12 @@
 ---- Minecraft Crash Report ----
-// Hi. I'm Minecraft, and I'm a crashaholic.
+// This doesn't make any sense!
 
-Time: 2019-12-21 13:57:02 CET
+Time: 2019-12-21 14:39:34 CET
 Description: Rendering screen
 
 java.lang.NullPointerException
     at furgl.stupidThings.util.TooltipHelper.addTooltipRecipe(TooltipHelper.java:76)
-    at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_2851_TooltipHelper_addTooltipRecipe_PostText.invoke(.dynamic)
+    at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_2850_TooltipHelper_addTooltipRecipe_PostText.invoke(.dynamic)
     at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
     at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
     at farseek.world.gen.structure.package$.post(package.scala:38)
@@ -19,13 +19,13 @@ java.lang.NullPointerException
     at mezz.jei.gui.overlay.IngredientGridWithNavigation.drawTooltips(IngredientGridWithNavigation.java:102)
     at mezz.jei.gui.overlay.IngredientListOverlay.drawTooltips(IngredientListOverlay.java:173)
     at mezz.jei.gui.GuiEventHandler.onDrawScreenEventPost(GuiEventHandler.java:119)
-    at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_4013_GuiEventHandler_onDrawScreenEventPost_Post.invoke(.dynamic)
+    at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_4014_GuiEventHandler_onDrawScreenEventPost_Post.invoke(.dynamic)
     at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
     at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
     at farseek.world.gen.structure.package$.post(package.scala:38)
     at farseek.world.gen.structure.package.post(package.scala)
     at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:397)
-    at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+    at sun.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
     at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
     at java.lang.reflect.Method.invoke(Unknown Source)
     at net.optifine.reflect.Reflector.callVoid(Reflector.java:660)
@@ -46,24 +46,24 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Screen render details --
   Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
-  Mouse location: Scaled: (559, 113). Absolute: (1678, 686)
+  Mouse location: Scaled: (550, 114). Absolute: (1652, 683)
   Screen size: Scaled: (640, 343). Absolute: (1920, 1027). Scale factor of 3
 
 -- Affected level --
   Level name: MpServer
-  All players: 1 total; [EntityPlayerSP['Oktopasy'/492, l='MpServer', x=750.72, y=4.00, z=-686.47]]
-  Chunk stats: MultiplayerChunkCache: 130, 130
+  All players: 1 total; [EntityPlayerSP['Oktopasy'/276, l='MpServer', x=736.95, y=4.00, z=-686.69]]
+  Chunk stats: MultiplayerChunkCache: 133, 133
   Level seed: 0
   Level generator: ID 01 - flat, ver 0. Features enabled: false
   Level generator options: 
   Level spawn location: World: (766,4,-687), Chunk: (at 14,0,1 in 47,-43; contains blocks 752,0,-688 to 767,255,-673), Region: (1,-2; contains chunks 32,-64 to 63,-33, blocks 512,0,-1024 to 1023,255,-513)
-  Level time: 5543 game time, 5543 day time
+  Level time: 10550 game time, 10550 day time
   Level dimension: 0
   Level storage version: 0x00000 - Unknown?
   Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
   Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
-  Forced entities: 37 total; [EntityCow['Cow'/512, l='MpServer', x=805.50, y=4.00, z=-724.50], EntityRaven['Raven'/513, l='MpServer', x=814.50, y=4.00, z=-724.50], EntityRaven['Raven'/514, l='MpServer', x=806.50, y=4.00, z=-631.50], EntityRaven['Raven'/515, l='MpServer', x=804.50, y=4.00, z=-628.50], EntityChicken['Chicken'/516, l='MpServer', x=820.43, y=4.00, z=-715.58], EntityChicken['Chicken'/517, l='MpServer', x=825.52, y=4.00, z=-709.13], EntityChicken['Chicken'/519, l='MpServer', x=686.50, y=4.00, z=-667.50], EntityChicken['Chicken'/520, l='MpServer', x=685.50, y=4.00, z=-672.50], EntityWizard['Wizard'/521, l='MpServer', x=676.50, y=15.50, z=-612.50], EntityHat['unknown'/605, l='MpServer', x=750.72, y=4.00, z=-686.47], EntityItem['item.item.openblocks.info_book'/493, l='MpServer', x=765.79, y=4.00, z=-683.37], EntityItem['item.item.patchouli:guide_book'/494, l='MpServer', x=766.94, y=4.00, z=-683.68], EntityItem['item.item.jaffaitem'/495, l='MpServer', x=766.78, y=4.00, z=-683.62], EntityItem['item.item.ftbquests.book'/496, l='MpServer', x=767.08, y=4.00, z=-683.14], EntityItem['item.item.snowball'/497, l='MpServer', x=766.72, y=4.00, z=-683.27], EntityItem['item.item.tconstruct.book'/498, l='MpServer', x=766.99, y=4.00, z=-683.12], EntityItem['item.item.conarm.book'/499, l='MpServer', x=766.98, y=4.00, z=-683.24], EntityItem['item.item.items.integrateddynamics.on_the_dynamics_of_integration'/500, l='MpServer', x=767.02, y=4.00, z=-683.04], EntitySnake['Snake'/501, l='MpServer', x=698.99, y=4.00, z=-729.01], EntitySnake['Snake'/502, l='MpServer', x=698.50, y=4.00, z=-716.50], EntityChicken['Chicken'/503, l='MpServer', x=691.50, y=4.00, z=-663.50], EntityPlayerSP['Oktopasy'/492, l='MpServer', x=750.72, y=4.00, z=-686.47], EntityChicken['Chicken'/504, l='MpServer', x=691.50, y=4.00, z=-662.50], EntityLatchedRenderer['unknown'/569, l='MpServer', x=8.50, y=65.00, z=8.50], EntitySnake['Snake'/505, l='MpServer', x=701.50, y=4.00, z=-636.50], EntityHat['unknown'/570, l='MpServer', x=8.50, y=65.00, z=8.50], EntityRaven['Raven'/506, l='MpServer', x=712.50, y=4.00, z=-690.50], EntityHat['unknown'/571, l='MpServer', x=754.79, y=4.00, z=-689.51], EntitySnake['Snake'/507, l='MpServer', x=713.00, y=4.00, z=-685.02], EntityHat['unknown'/572, l='MpServer', x=754.79, y=4.00, z=-689.51], EntitySnake['Snake'/508, l='MpServer', x=706.50, y=4.00, z=-633.50], EntityHat['unknown'/573, l='MpServer', x=754.79, y=4.00, z=-689.51], EntitySnake['Snake'/509, l='MpServer', x=730.41, y=4.00, z=-661.43], EntityHat['unknown'/574, l='MpServer', x=754.79, y=4.00, z=-689.51], EntitySnake['Snake'/510, l='MpServer', x=725.97, y=4.00, z=-664.01], EntityHat['unknown'/575, l='MpServer', x=754.79, y=4.00, z=-689.51], EntityCow['Cow'/511, l='MpServer', x=814.18, y=4.00, z=-728.21]]
-  Retry entities: 7 total; [EntityLatchedRenderer['unknown'/569, l='MpServer', x=8.50, y=65.00, z=8.50], EntityHat['unknown'/570, l='MpServer', x=8.50, y=65.00, z=8.50], EntityHat['unknown'/571, l='MpServer', x=754.79, y=4.00, z=-689.51], EntityHat['unknown'/572, l='MpServer', x=754.79, y=4.00, z=-689.51], EntityHat['unknown'/573, l='MpServer', x=754.79, y=4.00, z=-689.51], EntityHat['unknown'/574, l='MpServer', x=754.79, y=4.00, z=-689.51], EntityHat['unknown'/575, l='MpServer', x=754.79, y=4.00, z=-689.51]]
+  Forced entities: 20 total; [EntitySnake['Snake'/288, l='MpServer', x=727.72, y=4.00, z=-657.49], EntitySnake['Snake'/289, l='MpServer', x=713.98, y=4.00, z=-660.00], EntityCow['Cow'/290, l='MpServer', x=807.84, y=4.00, z=-729.43], EntityCow['Cow'/291, l='MpServer', x=805.50, y=4.00, z=-724.50], EntityHat['unknown'/363, l='MpServer', x=736.95, y=4.00, z=-686.69], EntityChicken['Chicken'/277, l='MpServer', x=685.50, y=4.00, z=-672.50], EntityChicken['Chicken'/278, l='MpServer', x=686.50, y=4.00, z=-667.50], EntityWizard['Wizard'/279, l='MpServer', x=676.50, y=15.00, z=-612.50], EntityPlayerSP['Oktopasy'/276, l='MpServer', x=736.95, y=4.00, z=-686.69], EntitySnake['Snake'/280, l='MpServer', x=695.59, y=4.00, z=-732.41], EntityLatchedRenderer['unknown'/345, l='MpServer', x=8.50, y=65.00, z=8.50], EntitySnake['Snake'/281, l='MpServer', x=703.46, y=4.00, z=-700.98], EntityHat['unknown'/346, l='MpServer', x=736.95, y=4.00, z=-686.69], EntityChicken['Chicken'/282, l='MpServer', x=691.50, y=4.00, z=-663.50], EntityHat['unknown'/347, l='MpServer', x=736.95, y=4.00, z=-686.69], EntityChicken['Chicken'/283, l='MpServer', x=691.50, y=4.00, z=-662.50], EntitySnake['Snake'/284, l='MpServer', x=713.99, y=4.00, z=-681.01], EntityRaven['Raven'/285, l='MpServer', x=721.91, y=4.00, z=-697.89], EntitySnake['Snake'/286, l='MpServer', x=702.98, y=4.00, z=-643.02], EntitySnake['Snake'/287, l='MpServer', x=716.35, y=4.00, z=-636.78]]
+  Retry entities: 3 total; [EntityLatchedRenderer['unknown'/345, l='MpServer', x=8.50, y=65.00, z=8.50], EntityHat['unknown'/346, l='MpServer', x=736.95, y=4.00, z=-686.69], EntityHat['unknown'/347, l='MpServer', x=736.95, y=4.00, z=-686.69]]
   Server brand: fml,forge
   Server type: Integrated singleplayer server
 
@@ -72,7 +72,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
   Operating System: Windows 10 (amd64) version 10.0
   Java Version: 1.8.0_231, Oracle Corporation
   Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-  Memory: 633920272 bytes (604 MB) / 5730992128 bytes (5465 MB) up to 5730992128 bytes (5465 MB)
+  Memory: 1148515736 bytes (1095 MB) / 5460983808 bytes (5208 MB) up to 5726797824 bytes (5461 MB)
   JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx6144m -Xms256m -XX:PermSize=256m
   IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
   FML: MCP 9.42 Powered by Forge 14.23.5.2847 Optifine OptiFine_1.12.2_HD_U_F5 276 mods loaded, 275 mods active
@@ -421,7 +421,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
                                       FarseekCoreMod (Farseek-1.12-2.4.jar)
                                         farseek.core.FarseekClassTransformer
                                       MovingWorldCore (movingworld-1.12-6.342-full.jar)
-  GL info: ' Vendor: 'Intel' Version: '4.5.0 - Build 22.20.16.4749' Renderer: 'Intel(R) HD Graphics 630'
+  GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 441.66' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
   OpenModsLib class transformers: [llama_null_fix:FINISHED],[horse_base_null_fix:FINISHED],[pre_world_render_hook:FINISHED],[player_render_hook:FINISHED],[horse_null_fix:FINISHED]
   AE2 Version: stable rv6-stable-7 for Forge 14.23.5.2768
   Pulsar/tconstruct loaded Pulses: - TinkerCommons (Enabled/Forced)
@@ -644,7 +644,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
   Suspected Mods: Stupid Things (stupidthings), Farseek (farseek), Just Enough Items (jei)
   Launched Version: forge-14.23.5.2847
   LWJGL: 2.9.4
-  OpenGL: Intel(R) HD Graphics 630 GL version 4.5.0 - Build 22.20.16.4749, Intel
+  OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 441.66, NVIDIA Corporation
   GL Caps: Using GL 1.3 multitexturing.
            Using GL 1.3 texture combiners.
            Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
@@ -657,5 +657,5 @@ A detailed walkthrough of the error, its code path and all known details is as f
   Current Language: English (US)
   Profiler Position: N/A (disabled)
   CPU: 4x Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
-  Client Crashes Since Restart: 3
+  Client Crashes Since Restart: 2
   Integrated Server Crashes Since Restart: 0
